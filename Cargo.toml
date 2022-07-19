@@ -1,0 +1,15 @@
+[package]
+name = "dungeon-master"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.19.2", features = ["full"] }
+dotenv = "0.15.0"
+
+[dependencies.serenity]
+default-features = false
+features = ["builder", "client", "framework", "gateway", "utils", "native_tls_backend", "model", "standard_framework", "collector"]
+version = "0.11.2"
